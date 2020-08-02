@@ -38,27 +38,37 @@
           <button class="btn btn-warning">DELIVERY</button>
         </div>
     </div>
-    <div>
+    <div class="">
         <form action=""> 
-            <div >
+            <div class="form-group">
                 <!---pizza size-->
-                img
                 <section class="pizza-selection">
                     <label for="pizza">What size would you like?</label>
-                    <input list="pizza-size" id="pizza" name="pizza" required>
+                    <input class="form-control" list="pizza-size" id="pizza" name="pizza" required>
                     <datalist id="pizza-size">
-                    <option value="small"></option>
-                    <option value="medium"></option>
-                    <option value="large"></option>
+                        <option value="small"></option>
+                        <option value="medium"></option>
+                        <option value="large"></option>
                     </datalist>
                 </section>
             </div>
-            <div >
+            <div class="form-group">
+                <!---crust-->
+                <section class="crust-selection">
+                    <label for="crust">which Crust would you like?</label>
+                    <input class="form-control" list="crusts" id="crust" name="crust" required>
+                    <datalist id="crusts">
+                        <option value="Crispy"></option>
+                        <option value="Stuffed"></option>
+                        <option value="Gluten-free"></option>
+                    </datalist>
+                </section>
+            </div>
+            <div class="form-group">
                 <!--- toppings-->
-                img
                 <section class="topping-selection">
                     <label for="topping">What toppings would you like?</label>
-                    <input list="toppings" id="topping" name="topping" required>
+                    <input class="form-control" list="toppings" id="topping" name="topping" required>
                     <datalist id="toppings">
                         <option value="Pepperoni"></option>
                         <option value="Sausage"></option>
@@ -68,18 +78,27 @@
                     </datalist>
                 </section>
             </div>
-            <div >
-                <!--- number of pizza-->
-                img
-                <section class="quantity-selection">
-                    <label for="quantity">Number of Pizza</label>
-                    <input type="number" id="quantity" name="quantity" min="1" required>
+            
+            <div class="form-group">
+                <!---delivery option-->
+                <section class="OType-selection">
+                    <label for="OType">Order type</label>
+                    <input class="form-control" list="OTypes" id="OType" name="OType" required>
+                    <datalist id="OTypes">
+                        <option value="delivery"></option>
+                        <option value="pick-up"></option>
+                    </datalist>
                 </section>
             </div>
-            <div>
+            <div class="form-group">
                 <label for="total">Total Amount (KES)</label>
                 <output ></output>
             </div>
+            <div>
+                <label for="quantity">Number of pizza</label>
+                <input class="form-control" type="number" id="quantity" name="quantity" min="1" required>
+            </div>
+            <button type="submit" class="btn btn-warning">Complete Order</button>
         </form> 
     </div>
 </body>
