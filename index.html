@@ -40,88 +40,98 @@
     </div>
 
     <div class="content">
-        <!---menu-->
-        <div class="menu-row-padding menu-padding-16 menu-center">
-            <div class="menu-quarter">
-            <img src="./images/download.jpg" alt="Popsicle" width="200px" height="200px">
-            <h3>All I Need Is a Popsicle</h3>
-            <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+        <!---Order form-->
+        
+        <section class="section2">
+            <h5>ORDER BELOW:</h5>
+            <form action="" class="form"> 
+                <div class="form-group">
+                    <!---pizza size-->
+                    <section class="pizza-selection">
+                        <label for="pizza">What size would you like?</label>
+                        <input class="form-control" list="pizza-size" id="pizza" name="pizza" required>
+                        <datalist id="pizza-size">
+                            <option value="small"></option>
+                            <option value="medium"></option>
+                            <option value="large"></option>
+                        </datalist>
+                    </section>
+                </div>
+                <div class="form-group">
+                    <!---crust-->
+                    <section class="crust-selection">
+                        <label for="crust">which Crust would you like?</label>
+                        <input class="form-control" list="crusts" id="crust" name="crust" required>
+                        <datalist id="crusts">
+                            <option value="Crispy"></option>
+                            <option value="Stuffed"></option>
+                            <option value="Gluten-free"></option>
+                        </datalist>
+                    </section>
+                </div>
+                <div class="form-group">
+                    <!--- toppings-->
+                    <section class="topping-selection">
+                        <label for="topping">What toppings would you like?</label>
+                        <input class="form-control" list="toppings" id="topping" name="topping" required>
+                        <datalist id="toppings">
+                            <option value="Pepperoni"></option>
+                            <option value="Sausage"></option>
+                            <option value="Extra-cheese"></option>
+                            <option value="Pineapple"></option>
+                            <option value="Spinach"></option>
+                        </datalist>
+                    </section>
+                </div>
+                <div>
+                    <label for="quantity">Number of pizza</label>
+                    <input class="form-control" type="number" id="quantity" name="quantity" min="1" required>
+                </div><br>
+                <div class="form-group">
+                    <!---delivery option-->
+                    <section class="OType-selection">
+                        <label for="OType">Order type</label>
+                        <input class="form-control" list="OTypes" id="OType" name="OType" required>
+                        <datalist id="OTypes">
+                            <option value="delivery"></option>
+                            <option value="pick-up"></option>
+                        </datalist>
+                    </section>
+                </div><br>
+                <div class="form-group">
+                    <label for="total">Total Amount (KES) = <output ></output></label>
+                </div>
+                <button type="submit" class="btn btn-warning">Checkout</button>
+            </form> 
+        </section>
+         <!---menu-->
+        <section class="section1">
+            <h5>MENU</h5>
+            <div class="row">
+                <div class="col">
+                    <img src="./images/download.jpg" alt="Popsicle" width="200px" height="200px">
+                    <h3>All I Need Is a Popsicle</h3>
+                    <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+                </div>
+                <div class="col">
+                    <img src="/images/download.jpg" alt="Salmon"  width="200px" height="200px">
+                    <h3>Salmon For Your Skin</h3>
+                    <p>Once again, some random text to lorem lorem .</p>
+                </div>
             </div>
-            <div class="menu-quarter">
-            <img src="/w3images/salmon.jpg" alt="Salmon" style="width:100%">
-            <h3>Salmon For Your Skin</h3>
-            <p>Once again, some random text to lorem lorem .</p>
+            <div class="row">
+                <div class="col">
+                    <img src="/images/download.jpg" alt="Sandwich"  width="200px" height="200px">
+                    <h3>The Perfect Sandwich, A Real Classic</h3>
+                    <p>Just some random text, lorem ipsum text lipsum.</p>
+                </div>
+                <div class="col">
+                    <img src="/images/download.jpg" alt="Croissant"  width="200px" height="200px">
+                    <h3>Le French</h3>
+                    <p>Lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+                </div>
             </div>
-            <div class="menu-quarter">
-            <img src="/w3images/sandwich.jpg" alt="Sandwich" style="width:100%">
-            <h3>The Perfect Sandwich, A Real Classic</h3>
-            <p>Just some random text, lorem ipsum text lipsum.</p>
-            </div>
-            <div class="menu-quarter">
-            <img src="/w3images/croissant.jpg" alt="Croissant" style="width:100%">
-            <h3>Le French</h3>
-            <p>Lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
-            </div>
-        </div>
-        <form action=""> 
-            <div class="form-group">
-                <!---pizza size-->
-                <section class="pizza-selection">
-                    <label for="pizza">What size would you like?</label>
-                    <input class="form-control" list="pizza-size" id="pizza" name="pizza" required>
-                    <datalist id="pizza-size">
-                        <option value="small"></option>
-                        <option value="medium"></option>
-                        <option value="large"></option>
-                    </datalist>
-                </section>
-            </div>
-            <div class="form-group">
-                <!---crust-->
-                <section class="crust-selection">
-                    <label for="crust">which Crust would you like?</label>
-                    <input class="form-control" list="crusts" id="crust" name="crust" required>
-                    <datalist id="crusts">
-                        <option value="Crispy"></option>
-                        <option value="Stuffed"></option>
-                        <option value="Gluten-free"></option>
-                    </datalist>
-                </section>
-            </div>
-            <div class="form-group">
-                <!--- toppings-->
-                <section class="topping-selection">
-                    <label for="topping">What toppings would you like?</label>
-                    <input class="form-control" list="toppings" id="topping" name="topping" required>
-                    <datalist id="toppings">
-                        <option value="Pepperoni"></option>
-                        <option value="Sausage"></option>
-                        <option value="Extra-cheese"></option>
-                        <option value="Pineapple"></option>
-                        <option value="Spinach"></option>
-                    </datalist>
-                </section>
-            </div>
-            <div>
-                <label for="quantity">Number of pizza</label>
-                <input class="form-control" type="number" id="quantity" name="quantity" min="1" required>
-            </div><br>
-            <div class="form-group">
-                <!---delivery option-->
-                <section class="OType-selection">
-                    <label for="OType">Order type</label>
-                    <input class="form-control" list="OTypes" id="OType" name="OType" required>
-                    <datalist id="OTypes">
-                        <option value="delivery"></option>
-                        <option value="pick-up"></option>
-                    </datalist>
-                </section>
-            </div><br>
-            <div class="form-group">
-                <label for="total">Total Amount (KES) = <output ></output></label>
-            </div>
-            <button type="submit" class="btn btn-warning">Checkout</button>
-        </form> 
+        </section>
     </div>
 </body>
 </html>
