@@ -27,3 +27,24 @@ body, html {
   transform: translate(-50%, -50%);
   color: white;
 }
+
+.content {
+  padding: 30px;
+
+}
+
+form {
+  float: right;
+  width: 40%;
+  background-color: #525252;
+  color: white;
+  padding: 20px;
+  
+}
+
+.menu-row-padding {
+  float: left;
+  width: 60%;
+  padding: 20px;
+
+}
