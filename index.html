@@ -38,5 +38,49 @@
           <button class="btn btn-warning">DELIVERY</button>
         </div>
     </div>
+    <div>
+        <form action=""> 
+            <div >
+                <!---pizza size-->
+                img
+                <section class="pizza-selection">
+                    <label for="pizza">What size would you like?</label>
+                    <input list="pizza-size" id="pizza" name="pizza" required>
+                    <datalist id="pizza-size">
+                    <option value="small"></option>
+                    <option value="medium"></option>
+                    <option value="large"></option>
+                    </datalist>
+                </section>
+            </div>
+            <div >
+                <!--- toppings-->
+                img
+                <section class="topping-selection">
+                    <label for="topping">What toppings would you like?</label>
+                    <input list="toppings" id="topping" name="topping" required>
+                    <datalist id="toppings">
+                        <option value="Pepperoni"></option>
+                        <option value="Sausage"></option>
+                        <option value="Extra-cheese"></option>
+                        <option value="Pineapple"></option>
+                        <option value="Spinach"></option>
+                    </datalist>
+                </section>
+            </div>
+            <div >
+                <!--- number of pizza-->
+                img
+                <section class="quantity-selection">
+                    <label for="quantity">Number of Pizza</label>
+                    <input type="number" id="quantity" name="quantity" min="1" required>
+                </section>
+            </div>
+            <div>
+                <label for="total">Total Amount (KES)</label>
+                <output ></output>
+            </div>
+        </form> 
+    </div>
 </body>
 </html>
