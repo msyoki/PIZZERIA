@@ -29,22 +29,28 @@ body, html {
 }
 
 .content {
-  padding: 30px;
+  padding: 20px;
+  margin-right: 50px;
+  margin-left: 50px;
+  align-content: center;
+  height: auto;
+  
 
 }
 
-form {
+.form {
   float: right;
-  width: 40%;
+  width: auto;
   background-color: #525252;
   color: white;
-  padding: 20px;
+  padding: 30px;
+
   
 }
 
 .menu-row-padding {
   float: left;
-  width: 60%;
-  padding: 20px;
+  width: auto;
+  text-align: center;
 
 }
