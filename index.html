@@ -38,7 +38,31 @@
           <button class="btn btn-warning">DELIVERY</button>
         </div>
     </div>
-    <div class="">
+
+    <div class="content">
+        <!---menu-->
+        <div class="menu-row-padding menu-padding-16 menu-center">
+            <div class="menu-quarter">
+            <img src="./images/download.jpg" alt="Popsicle" width="200px" height="200px">
+            <h3>All I Need Is a Popsicle</h3>
+            <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+            </div>
+            <div class="menu-quarter">
+            <img src="/w3images/salmon.jpg" alt="Salmon" style="width:100%">
+            <h3>Salmon For Your Skin</h3>
+            <p>Once again, some random text to lorem lorem .</p>
+            </div>
+            <div class="menu-quarter">
+            <img src="/w3images/sandwich.jpg" alt="Sandwich" style="width:100%">
+            <h3>The Perfect Sandwich, A Real Classic</h3>
+            <p>Just some random text, lorem ipsum text lipsum.</p>
+            </div>
+            <div class="menu-quarter">
+            <img src="/w3images/croissant.jpg" alt="Croissant" style="width:100%">
+            <h3>Le French</h3>
+            <p>Lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+            </div>
+        </div>
         <form action=""> 
             <div class="form-group">
                 <!---pizza size-->
@@ -78,7 +102,10 @@
                     </datalist>
                 </section>
             </div>
-            
+            <div>
+                <label for="quantity">Number of pizza</label>
+                <input class="form-control" type="number" id="quantity" name="quantity" min="1" required>
+            </div><br>
             <div class="form-group">
                 <!---delivery option-->
                 <section class="OType-selection">
@@ -89,16 +116,11 @@
                         <option value="pick-up"></option>
                     </datalist>
                 </section>
-            </div>
+            </div><br>
             <div class="form-group">
-                <label for="total">Total Amount (KES)</label>
-                <output ></output>
+                <label for="total">Total Amount (KES) = <output ></output></label>
             </div>
-            <div>
-                <label for="quantity">Number of pizza</label>
-                <input class="form-control" type="number" id="quantity" name="quantity" min="1" required>
-            </div>
-            <button type="submit" class="btn btn-warning">Complete Order</button>
+            <button type="submit" class="btn btn-warning">Checkout</button>
         </form> 
     </div>
 </body>
