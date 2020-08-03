@@ -8,130 +8,135 @@
     <link rel="stylesheet" href="./css/style.css">
     <title>PIZZERIA</title>
 </head>
-<body>
-    <div id="overlay-fluid"> 
-        <nav class="navbar navbar-expand-lg navbar-light bg-warning" >
-            <a class="navbar-brand" href="#"><h3>RICOS's</h3></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
-                </li>
-            </ul>
-            </div>
-        </nav>
-    </div>
-    <div class="hero-image">
-        <div class="hero-text">
-          <h1>"WELCOME"<br>TO</h1>
-          <h1>RICO's PIZZA HUT</h1>
-          <p>"ORDER NOW!!!"</p>
-          <button class="btn btn-warning">DELIVERY</button>
+    <body>
+        <div id="overlay-fluid"> 
+            <nav class="navbar navbar-expand-lg navbar-light bg-warning" >
+                <a class="navbar-brand" href="#"><h3>RICOS's</h3></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                </ul>
+                </div>
+            </nav>
         </div>
-    </div>
-
-    <div class="content">
-        <!---Order form-->
-        
-        <section class="section2">
-            <h5>ORDER BELOW:</h5>
-            <form action="" class="form"> 
-                <div class="form-group">
-                    <!---pizza size-->
-                    <section class="pizza-selection">
-                        <label for="pizza">What size would you like?</label>
-                        <input class="form-control" list="pizza-size" id="pizza" name="pizza" required>
-                        <datalist id="pizza-size">
-                            <option value="small"></option>
-                            <option value="medium"></option>
-                            <option value="large"></option>
-                        </datalist>
-                    </section>
-                </div>
-                <div class="form-group">
-                    <!---crust-->
-                    <section class="crust-selection">
-                        <label for="crust">which Crust would you like?</label>
-                        <input class="form-control" list="crusts" id="crust" name="crust" required>
-                        <datalist id="crusts">
-                            <option value="Crispy"></option>
-                            <option value="Stuffed"></option>
-                            <option value="Gluten-free"></option>
-                        </datalist>
-                    </section>
-                </div>
-                <div class="form-group">
-                    <!--- toppings-->
-                    <section class="topping-selection">
-                        <label for="topping">What toppings would you like?</label>
-                        <input class="form-control" list="toppings" id="topping" name="topping" required>
-                        <datalist id="toppings">
-                            <option value="Pepperoni"></option>
-                            <option value="Sausage"></option>
-                            <option value="Extra-cheese"></option>
-                            <option value="Pineapple"></option>
-                            <option value="Spinach"></option>
-                        </datalist>
-                    </section>
-                </div>
-                <div>
-                    <label for="quantity">Number of pizza</label>
-                    <input class="form-control" type="number" id="quantity" name="quantity" min="1" required>
-                </div><br>
-                <div class="form-group">
-                    <!---delivery option-->
-                    <section class="OType-selection">
-                        <label for="OType">Order type</label>
-                        <input class="form-control" list="OTypes" id="OType" name="OType" required>
-                        <datalist id="OTypes">
-                            <option value="delivery"></option>
-                            <option value="pick-up"></option>
-                        </datalist>
-                    </section>
-                </div><br>
-                <div class="form-group">
-                    <label for="total">Total Amount (KES) = <output ></output></label>
-                </div>
-                <button type="submit" class="btn btn-warning">Checkout</button>
+        <div class="hero-image">
+            <div class="hero-text">
+            <h1>RICO's </h1>
+            <h2>PIZZA HUT</h2>
+            <p>"Hot & delicious pizza all day,everyday"</p>
+            <button class="btn btn-warning">MENU</button>
+            </div>
+        </div>
+         <!---Order form-->
+         <div class="hero-image2">
+            <form action="" > 
+                <div class="hero-text2">
+                    <h5><u>ENTER ORDER</u></h5><br><br>
+                    <div class="form-group">
+                        <!---pizza size-->
+                        <section class="pizza-selection">
+                            <label for="pizza">What size would you like?</label>
+                            <input class="form-control" list="pizza-size" id="pizza" name="pizza" required>
+                            <datalist id="pizza-size">
+                                <option value="small"></option>
+                                <option value="medium"></option>
+                                <option value="large"></option>
+                            </datalist>
+                        </section>
+                    </div>
+                    <div class="form-group">
+                        <!---crust-->
+                        <section class="crust-selection">
+                            <label for="crust">which Crust would you like?</label>
+                            <input class="form-control" list="crusts" id="crust" name="crust" required>
+                            <datalist id="crusts">
+                                <option value="Crispy"></option>
+                                <option value="Stuffed"></option>
+                                <option value="Gluten-free"></option>
+                            </datalist>
+                        </section>
+                    </div>
+                    <div class="form-group">
+                        <!--- toppings-->
+                        <section class="topping-selection">
+                            <label for="topping">What toppings would you like?</label>
+                            <input class="form-control" list="toppings" id="topping" name="topping" required>
+                            <datalist id="toppings">
+                                <option value="Pepperoni"></option>
+                                <option value="Sausage"></option>
+                                <option value="Extra-cheese"></option>
+                                <option value="Pineapple"></option>
+                                <option value="Spinach"></option>
+                            </datalist>
+                        </section>
+                    </div>
+                    <div>
+                        <label for="quantity">Number of pizza</label>
+                        <input class="form-control" type="number" id="quantity" name="quantity" min="1" required>
+                    </div><br>
+                    <div class="form-group">
+                        <!---delivery option-->
+                        <section class="OType-selection">
+                            <label for="OType">Order type</label>
+                            <input class="form-control" list="OTypes" id="OType" name="OType" required>
+                            <datalist id="OTypes">
+                                <option value="delivery"></option>
+                                <option value="pick-up"></option>
+                            </datalist>
+                        </section>
+                    </div><br>
+                    <div class="form-group">
+                        <label for="total">TOTAL = <output ></output></label>
+                    </div>
+                    <button type="submit" class="btn btn-warning">Checkout</button>
+                </div>     
             </form> 
-        </section>
-         <!---menu-->
-        <section class="section1">
-            <h5>MENU</h5>
-            <div class="row">
-                <div class="col">
-                    <img src="./images/download.jpg" alt="Popsicle" width="200px" height="200px">
-                    <h3>All I Need Is a Popsicle</h3>
-                    <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+            
+        </div>
+        <!---menu-->
+        <div class="menu">
+            <h1>MENU</h1>
+            <div class="row"> 
+                <div class="column">
+                <div class="content">
+                    <img src="/images/download.jpg" alt="Mountains" style="width:100%">
+                    <h5>My Work</h5>
+                    <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
                 </div>
-                <div class="col">
-                    <img src="/images/download.jpg" alt="Salmon"  width="200px" height="200px">
-                    <h3>Salmon For Your Skin</h3>
-                    <p>Once again, some random text to lorem lorem .</p>
+                </div>
+                <div class="column">
+                <div class="content">
+                    <img src="/images/download.jpg" alt="Lights" style="width:100%">
+                    <h5>My Work</h5>
+                    <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+                </div>
+                </div>
+                <div class="column">
+                <div class="content">
+                <img src="/images/download.jpg" alt="Nature" style="width:100%">
+                    <h5>My Work</h5>
+                    <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+                </div>
+                </div>
+                <div class="column">
+                <div class="content">
+                <img src="/images/download.jpg" alt="Mountains" style="width:100%">
+                    <h5>My Work</h5>
+                    <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
                 </div>
             </div>
-            <div class="row">
-                <div class="col">
-                    <img src="/images/download.jpg" alt="Sandwich"  width="200px" height="200px">
-                    <h3>The Perfect Sandwich, A Real Classic</h3>
-                    <p>Just some random text, lorem ipsum text lipsum.</p>
-                </div>
-                <div class="col">
-                    <img src="/images/download.jpg" alt="Croissant"  width="200px" height="200px">
-                    <h3>Le French</h3>
-                    <p>Lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
-                </div>
-            </div>
-        </section>
-    </div>
-</body>
+        </div>  
+    
+    </body>
 </html>
