@@ -1,6 +1,8 @@
 body, html {
-    height: 100%;
-    font-family: Arial, Helvetica, sans-serif;
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+    
 }
 /* The hero image */
 .hero-image {
@@ -19,8 +21,9 @@ body, html {
 
 /* Place text in the middle of the image */
 .hero-text {
+  font-weight: bolder;
   text-align: center;
-  font-family: 'Paytone One', sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -30,27 +33,76 @@ body, html {
 
 .content {
   padding: 20px;
-  margin-right: 50px;
-  margin-left: 50px;
-  align-content: center;
-  height: auto;
-  
 
 }
 
-.form {
-  float: right;
-  width: auto;
-  background-color: #525252;
-  color: white;
-  padding: 30px;
-
-  
+.row {
+  margin: 8px -16px;
 }
 
-.menu-row-padding {
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
   float: left;
-  width: auto;
+  width: 25%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+.menu {
+  padding: 20px;
   text-align: center;
+}
+
+.hero-image2 {
+  background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/bg.jpg);
+  background-position: center;;
+  background-size: cover;;
+  background-repeat: no-repeat;
+  position: relative;
+  padding-top: 350px;
+  padding-bottom: 400px;
+  margin: 0;
+
 
 }
+
+.hero-text2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  clear: both;
+  text-align: center;
+}
+
