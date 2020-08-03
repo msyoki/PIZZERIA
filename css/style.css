@@ -4,6 +4,10 @@ body, html {
   margin: 0;
     
 }
+
+#overlay-fluid{
+  background-color: #f0ad4e;
+}
 /* The hero image */
 .hero-image {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
@@ -23,7 +27,7 @@ body, html {
 .hero-text {
   font-weight: bolder;
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Merriweather', serif;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -78,22 +82,30 @@ body, html {
     width: 100%;
   }
 }
+
+#menu-label {
+  padding: 20px;
+  background-color: #f0ad4e;
+  color: black;
+  text-align: center;
+  font-weight: bolder;
+}
 .menu {
   padding: 40px;
   text-align: center;
 
 }
 
+
 .hero-image2 {
-  background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/bg.jpg);
+  background-color: #292929;
   background-position: center;;
   background-size: cover;;
   background-repeat: no-repeat;
   position: relative;
-  padding-top: 350px;
-  padding-bottom: 400px;
+  padding-top: 300px;
+  padding-bottom: 350px;
   margin: 0;
-  opacity: 0.9;
 
 
 }
