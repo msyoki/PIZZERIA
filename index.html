@@ -42,69 +42,60 @@
             <h6>!!! ENTER ORDER BELOW !!!</h6>
         </div>
          <!---Order form-->
-         <div class="hero-image2">
-            <form action="" id="form"> 
-                <div class="hero-text2">
-                    <div class="form-group">
-                        <!---pizza size-->
-                        <section class="pizza-selection">
-                            <label for="pizza">What size would you like?</label>
-                            <input class="form-control" list="pizza-size" id="pizza" name="pizza" required>
-                            <datalist id="pizza-size">
-                                <option value="small"></option>
-                                <option value="medium"></option>
-                                <option value="large"></option>
-                            </datalist>
-                        </section>
-                    </div>
-                    <div class="form-group">
-                        <!---crust-->
-                        <section class="crust-selection">
+        <div class="orders" id="order">
+            <h1 class="text-center" id="order-pizza">Order Pizza</h1>
+            <div class="form-group row">
+                <div class="col-sm-2"></div>
+                    <div class="col-sm-8 order-overlay text-center">
+                        <form action="" id="form" class="col-sm-6 offset-sm-3 text-center"> 
+                            <!---pizza size-->
+                            <label for="size">What size would you like?</label>
+                            <select id="size" name="size" class="custom-select custom-select-md mb-3" required>
+                                <option selected >select</option>
+                                <option value="small--- @ 350 Kshs">Small--- @ 350 Kshs</option>
+                                <option value="medium--- @ 500 Kshs">Medium--- @ 500 Kshs</option>
+                                <option value="large--- @ 1000 Kshs">Large--- @ 1000 Kshs</option>
+                            </select>
+                            <!---pizza flavour-->
+                            <label for="flavour">What flavour would you like?</label>
+                            <select id="flavour" name="flavour" class="custom-select custom-select-md mb-3" required>
+                                <option selected >select</option>
+                                <option value="Hawaiian">Rico's Hawaiian</option>
+                                <option value="Chicken Tikka">Rico's Chicken Tikka</option>
+                                <option value="BBQ steak">Rico's BBQ steak</option>
+                                <option value="Meat Delux">Rico's Meat Delux</option>
+                            </select>
+                            <!---crust-->
                             <label for="crust">which Crust would you like?</label>
-                            <input class="form-control" list="crusts" id="crust" name="crust" required>
-                            <datalist id="crusts">
-                                <option value="Crispy" ></option>
-                                <option value="Stuffed"></option>
-                                <option value="Gluten-free"></option>
-                            </datalist>
-                        </section>
-                    </div>
-                    <div class="form-group">
-                        <!--- toppings-->
-                        <section class="topping-selection">
+                            <select id="crust" name="crust" class="custom-select custom-select-md mb-3" required>
+                                <option selected >select</option>
+                                <option value="Crispy  --- @ 150 Kshs" >Crispy  --- @ 150 Kshs</option>
+                                <option value="Stuffed  --- @ 200 Kshs">Stuffed  --- @ 200 Kshs</option>
+                                <option value="Gluten-free --- @ 180 Kshs">Gluten-free --- @ 180 Kshs</option>
+                            </select>
+                            <!--- toppings-->
                             <label for="topping">What toppings would you like?</label>
-                            <input class="form-control" list="toppings" id="topping" name="topping" required>
-                            <datalist id="toppings">
-                                <option value="Pepperoni"></option>
-                                <option value="Sausage"></option>
-                                <option value="Extra-cheese"></option>
-                                <option value="Pineapple"></option>
-                                <option value="Spinach"></option>
-                            </datalist>
-                        </section>
+                            <select id="toppings" name="topping"class="custom-select custom-select-md mb-3" required>
+                                <option selected >select</option>
+                                <option value="Pepperoni --- @ 200kshs">Pepperoni --- @ 200kshs</option>
+                                <option value="Sausage --- @ 300kshs">Sausage --- @ 300kshs</option>
+                                <option value="Extra-cheese --- @ 180kshs">Extra-cheese --- @ 180kshs</option>
+                                <option value="Pineapple --- @ 200kshs">Pineapple --- @ 200kshs</option>
+                                <option value="Spinach --- @ 180kshs">Spinach --- @ 180kshs</option>
+                            </select>
+                            <div>
+                                <label for="quantity">Number of pizza</label>
+                                <input class="custom-select custom-select-md mb-3" type="number" id="quantity" name="quantity" min="1" required>
+                            </div><br>
+                            <div class="totalcost">
+                                <label for="totalcost">
+                                <output name="totalcost" ></output></label>
+                            </div>
+                            <button type="submit" class="btn btn-warning">Checkout</button>
+                        </form> 
                     </div>
-                    <div>
-                        <label for="quantity">Number of pizza</label>
-                        <input class="form-control" type="number" id="quantity" name="quantity" min="1" required>
-                    </div><br>
-                    <div class="form-group">
-                        <!---delivery option-->
-                        <section class="OType-selection">
-                            <label for="OType">Order type</label>
-                            <input class="form-control" list="OTypes" id="OType" name="OType" required>
-                            <datalist id="OTypes">
-                                <option value="delivery"></option>
-                                <option value="pick-up"></option>
-                            </datalist>
-                        </section>
-                    </div><br>
-                    <div class="form-group">
-                        <label for="total">TOTAL = <output ></output></label>
-                    </div>
-                    <button type="submit" class="btn btn-warning">Checkout</button>
-                </div>     
-            </form> 
-            
+                </div>
+            </div>
         </div>
         <!---menu-->
         <div class="menu" id="menu">
@@ -147,6 +138,6 @@
                 </div>
             </div>
         </div>  
-    
+    <script src="./js/index.js"></script>
     </body>
 </html>
