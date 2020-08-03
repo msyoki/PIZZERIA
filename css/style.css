@@ -79,8 +79,9 @@ body, html {
   }
 }
 .menu {
-  padding: 20px;
+  padding: 40px;
   text-align: center;
+
 }
 
 .hero-image2 {
@@ -92,6 +93,7 @@ body, html {
   padding-top: 350px;
   padding-bottom: 400px;
   margin: 0;
+  opacity: 0.9;
 
 
 }
