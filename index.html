@@ -35,15 +35,44 @@
             <h1>RICO's </h1>
             <h2>PIZZA HUT</h2>
             <p>"Hot & delicious pizza all day,everyday"</p>
-            <button class="btn btn-primary" ><a href="#menu" style="color: white;">MENU</a></button>
+            <button class="btn btn-primary" ><a href="#order" style="color: white;">MAKE ORDER</a></button>
             </div>
         </div>
-         <!---Order form-->
+         <!---menu-->
+        <div class="menu" id="menu">
+            <h1>MENU</h1>
+            <div class="row1"> 
+                <div class="column">
+                    <div class="content">
+                        <img src="./images/download.jpg" alt="Rico's Hawaiian" style="width:100%"><br><br>
+                        <h5>Rico's Hawaiian</h5>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="content">
+                        <img src="./images/download.jpg" alt="Rico's Chicken Tikka" style="width:100%"><br><br>
+                        <h5>Rico's Chicken Tikka</h5>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="content">
+                        <img src="./images/download.jpg" alt="Rico's BBQ steak" style="width:100%"><br><br>
+                        <h5>Rico's BBQ steak</h5>
+                    </div>
+                </div>
+                <div class="column">
+                <div class="content">
+                    <img src="./images/download.jpg" alt="Rico's Meat Deluxe" style="width:100%"><br><br>
+                    <h5>Rico's Meat Deluxe</h5>
+                </div>
+            </div>
+        </div>  
+        <!---Order form-->
         <div class="orders" id="order">
             <h5 class="text-center" id="order-pizza">ENTER ORDER BELOW</h5><br>
             <div class="form-group row">
                 <div class="col-sm-2"></div>
-                    <div class="col-sm-8 order-overlay text-center">
+                    <div class="col-sm-8 text-centre">
                         <form action="" id="form" class="col-sm-6 offset-sm-3 text-center"> 
                             <!---pizza size-->
                             <label for="size">What size would you like?</label>
@@ -60,7 +89,7 @@
                                 <option value="Hawaiian">Rico's Hawaiian</option>
                                 <option value="Chicken Tikka">Rico's Chicken Tikka</option>
                                 <option value="BBQ steak">Rico's BBQ steak</option>
-                                <option value="Meat Delux">Rico's Meat Delux</option>
+                                <option value="Meat Delux">Rico's Meat Deluxe</option>
                             </select>
                             <!---crust-->
                             <label for="crust">which Crust would you like?</label>
@@ -89,52 +118,31 @@
                                 <output name="totalcost" ></output></label>
                             </div>
                             <button type="submit" class="btn btn-warning">Checkout</button>
-                        </form> 
+                        </form> <br><br> <br><br>
+                        <div class="order-summary" id="sum-order">
+                            <h4 class="text-center" id="summary">Complete Order</h4>
+                            <h5 class="text-center summary">Hello there, your order is as follows:</h5>
+                            <ol id="list" class="text-center sum">
+                            </ol>
+                            <div class="d-block mx-auto text-center">
+                                <button id="deliver" class="btn bg-warning">Make Delivery</button>
+                                <button id="delivernot" class="btn bg-warning">Pick Up</button>
+                            </div>
+                        </div><br><br>
+                        <div class="customerdata row">
+                            <div class="col-sm-3"></div>
+                            <form action="" class="form-group col-sm-6 data">
+                                <input type="text" class="form-control cdata" placeholder="Enter your Name:">
+                                <input type="text" class="form-control cdata" placeholder="Enter your phone number: ">
+                                <input type="text" class="form-control cdata" placeholder="Enter the location: "><br>
+                                <button class="btn bg-warning text-center d-block mx-auto go">Make Delivery</button>
+                            </form>
+                            <div class="col-sm-3"></div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!---menu-->
-        <div class="menu" id="menu">
-            <h1>MENU</h1>
-            <div class="row"> 
-                <div class="column">
-                <div class="content">
-                    <img src="./images/download.jpg" alt="Mountains" style="width:100%"><br><br>
-                    <h5>Peporoni</h5>
-                    <p>Large-300kshs.</p>
-                    <p>Medium-450kshs.</p>
-                    <p>Large-900ksh.</p> 
-                </div>
-                </div>
-                <div class="column">
-                <div class="content">
-                    <img src="./images/download.jpg" alt="Lights" style="width:100%"><br><br>
-                    <h5>Spinach deluxe</h5>
-                    <p>Large-300kshs.</p>
-                    <p>Medium-450kshs.</p>
-                    <p>Large-900ksh.</p> 
-                </div>
-                </div>
-                <div class="column">
-                <div class="content">
-                <img src="./images/download.jpg" alt="Nature" style="width:100%"><br><br>
-                    <h5>Meat deluxe</h5>
-                    <p>Large-300kshs.</p>
-                    <p>Medium-450kshs.</p>
-                    <p>Large-900ksh.</p> 
-                </div>
-                </div>
-                <div class="column">
-                <div class="content">
-                <img src="./images/download.jpg" alt="Mountains" style="width:100%"><br><br>
-                <h5>Fruite deluxe </h5>
-                <p>Large-300kshs.</p>
-                <p>Medium-450kshs.</p>
-                <p>Large-900ksh.</p> 
-                </div>
-            </div>
-        </div>  
-    <script src="./js/index.js"></script>
+        <script src="./js/index.js"></script>
     </body>
 </html>
