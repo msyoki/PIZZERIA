@@ -89,3 +89,18 @@ body, html {
   color: white;
   padding: 40px;
 }
+
+.menu {
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.menu h1 {
+  font-weight: bold;
+  padding-top: 80px;
+  padding-bottom: 50px;
+}
+
+.order {
+  padding-top: 1110px;
+}
