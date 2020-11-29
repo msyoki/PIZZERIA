@@ -75,63 +75,78 @@
     </div>  
     <!---Order form-->
     <div class="order" id="order">
-        <h3 class="text-center" id="order-pizza"><strong>Make Order</strong></h3><br><br>
+        
+        <div id="scroll" style="padding-bottom:50px;padding-top:50px">
+            <h1>Thank you!!!</h1>
+            <!-- <h1><i class="fa fa-smile-o" aria-hidden="true"></i></h1> -->
+            <h1><i class="fa fa-thumbs-o-up" aria-hidden="true"></i></h1>
+            <h5 ><i>Order complete,please checkout below</i> </h5>  
+            <br>
+            <a class="btn btn-warning" href="#summary" ><i class="fa fa-shopping-cart" aria-hidden="true"></i> Checkout</a><br>
+
+            
+        </div>
+        
         <form  id="pizza" class="col-sm-6 offset-sm-3 text-center" > 
-            <div class="row">
+            <div class="container" id="complete">
+                <h3 class="text-center" id="order-pizza"><strong>Make Order</strong></h3><br><br>
+                <div class="row" >
 
-                <div class="col-sm-4">
-                    <!---pizza size-->
-                    <label for="size">Pizza Size</label>
-                    <select id="size" name="size" class="custom-select custom-select-md mb-2" required>
-                        <option value="350">Small</option>
-                        <option value="500">Medium</option>
-                        <option value="1000">Large</option>
-                    </select><br>
+                    <div class="col-sm-4">
+                        <!---pizza size-->
+                        <label for="size">Pizza Size</label>
+                        <select id="size" name="size" class="custom-select custom-select-md mb-2" required>
+                            <option value="350">Small</option>
+                            <option value="500">Medium</option>
+                            <option value="1000">Large</option>
+                        </select><br>
 
-                    <!---pizza flavour-->
-                    <label for="flavor">Flavor</label>
-                    <select id="flavor" name="flavor" class="custom-select custom-select-md mb-2" required>
-                        <option value="0">Rico's Hawaiian</option>
-                        <option value="0">Rico's Chicken Tikka</option>
-                        <option value="0">Rico's BBQ steak</option>
-                        <option value="0">Rico's Meat Deluxe</option>
-                    </select><br>
+                        <!---pizza flavour-->
+                        <label for="flavor">Flavor</label>
+                        <select id="flavor" name="flavor" class="custom-select custom-select-md mb-2" required>
+                            <option value="0">Rico's Hawaiian</option>
+                            <option value="0">Rico's Chicken Tikka</option>
+                            <option value="0">Rico's BBQ steak</option>
+                            <option value="0">Rico's Meat Deluxe</option>
+                        </select><br>
+                    </div>
+                    <div class="col-sm-4">
+                        <!---crust-->
+                        <label for="crust">Crust</label>
+                        <select id="crust" name="crust" class="custom-select custom-select-md mb-2" required>
+                            <option value="150">Crispy</option>
+                            <option value="200">Stuffed</option>
+                            <option value="180">Gluten-free </option>
+                        </select><br>
+
+                        <!--- toppings-->
+                        <label for="toppings">Toppings</label>
+                        <select id="toppings" name="topping"class="custom-select custom-select-md mb-2" required>
+                            <option value="200">Pepperoni</option>
+                            <option value="300">Sausage</option>
+                            <option value="180">Extra-cheese</option>
+                            <option value="200">Pineapple</option>
+                            <option value="180">Spinach</option>
+                        </select>
+                    </div>
+                    <div class="col-sm-4">
+                        <!--- quantity-->
+                        <label for="number">Number of pizza</label>
+                        <input type="number" id="number" name="quantity" min="1" max= 35 class="custom-select custom-select-md mb-2" required>
+
+                        <!--- delivery-->
+                        <label for="delivery">Delivery</label>
+                        <select id="delivery" name="delivery"class="custom-select custom-select-md mb-2" required>
+                            <option value="400">Yes</option>
+                            <option value="0">No</option>
+                        </select><br><br>
+                    </div>
+                    
                 </div>
-                <div class="col-sm-4">
-                    <!---crust-->
-                    <label for="crust">Crust</label>
-                    <select id="crust" name="crust" class="custom-select custom-select-md mb-2" required>
-                        <option value="150">Crispy</option>
-                        <option value="200">Stuffed</option>
-                        <option value="180">Gluten-free </option>
-                    </select><br>
-
-                    <!--- toppings-->
-                    <label for="toppings">Toppings</label>
-                    <select id="toppings" name="topping"class="custom-select custom-select-md mb-2" required>
-                        <option value="200">Pepperoni</option>
-                        <option value="300">Sausage</option>
-                        <option value="180">Extra-cheese</option>
-                        <option value="200">Pineapple</option>
-                        <option value="180">Spinach</option>
-                    </select>
-                </div>
-                <div class="col-sm-4">
-                    <!--- quantity-->
-                    <label for="number">Number of pizza</label>
-                    <input type="number" id="number" name="quantity" min="1" max= 35 class="custom-select custom-select-md mb-2" required>
-
-                    <!--- delivery-->
-                    <label for="delivery">Delivery</label>
-                    <select id="delivery" name="delivery"class="custom-select custom-select-md mb-2" required>
-                        <option value="400">Yes</option>
-                        <option value="0">No</option>
-                    </select><br><br>
-                </div>
-            </div>
-            <button type= "submit" class="col-md-2 btn btn-light" id="checkout" onclick="checkout()">Complete</button><br><br><br>
-            <p id="scroll">Order complete,please checkout below!!!</p>
-            <a class="btn btn-warning" id="checkout" href="#summary" ><i class="fa fa-shopping-cart" aria-hidden="true"></i> Checkout</a>
+                <!-- <input type="submit" class="btn btn-light" id="checkout"><br><br><br> -->
+                <button type= "submit" class="col-md-2 btn btn-light" id="checkout">Complete</button><br><br>
+            </div>    
+            
 
         </form>  
     </div>
@@ -148,10 +163,14 @@
                 </div>
                 <div class="col-sm-4">
                     <h3>Total Kshs<span id="displayTotal"></span></h3><br>
-                    <h6> <img class="img1" src="./images/mpesa.png" alt=""> <br><br> Paybill-123456</h6>
+                    <h6> <img class="img1" src="./images/mpesa.png" alt=""> <br><br> Paybill-123456</h6><br>
+                    <a type="submit" class="btn btn-info" href="#home"  onClick="refreshPage()">New order</a>
                 </div>
                 <div class="col-sm-2"></div>
 
+            </div>
+            <div class="row">
+                
             </div>
         </div>
     </div>
@@ -172,5 +191,10 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
     <script src="./js/index.js"></script>
+    <script>
+        function refreshPage(){
+            window.location.reload();
+        } 
+        </script>
 </body>
 </html>

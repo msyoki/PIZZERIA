@@ -6,17 +6,20 @@ $(document).ready(function() {
 $(document).ready(function() {
     $('#summary').hide();
 })
+
+$(document).ready(function() {
+  $('#complete').show();
+})
+
 $(document).ready(function() {
   var deliveryPrice = 0;
   $('#checkout').click(function() {
       var checkValue = document.getElementById('delivery').value;
       if (checkValue === '400') {
-          deliveryPrice += 400;
-          var location = prompt('Enter delivery location:');
-          var contact = prompt('Enter contact number:');
-          alert('Delivery Price is Ksh' + deliveryPrice)
-          alert('Pizza will be delivered at' + ' ' + location);
-          alert('Contact number:' + ' ' + contact);
+        deliveryPrice += 400;
+        var location = prompt('Enter delivery location:');
+        alert('Delivery Price is Ksh' + deliveryPrice)
+        alert('Pizza will be delivered at' + ' ' + location);
       }     
   });
 
@@ -36,6 +39,7 @@ $(document).ready(function() {
     document.getElementById('seeYourToppingsChoice').innerHTML = pizzaTopping;
     document.getElementById('seeYourDeliveryChoice').innerHTML = pizzaDelivery;
     
+    $('#complete').hide();
     $('#summary').show();
     $('#scroll').show();
 
