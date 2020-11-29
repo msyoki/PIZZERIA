@@ -3,152 +3,174 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,900;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,900;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <title>PIZZERIA</title>
 </head>
-    <body>
-        <div id="overlay-fluid"> 
-            <nav class="navbar navbar-expand-lg navbar-light" >
-                <a class="navbar-brand" href="#home"><h3>RICOS's</h3></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color:#5da271">
+        <a class="navbar-brand" href="#home"><h3>RICOS's</h3></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item active">
-                    <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="#menu">Features</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="#order">Order</a>
-                    </li>
-                </ul>
-                </div>
-            </nav>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                <a class="nav-link" href="#home"><i class="fa fa-home" aria-hidden="true"></i>  Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#menu"><i class="fa fa-cutlery" aria-hidden="true"></i> Menu</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#order">Order</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contacts">Contact Us</a>
+                </li>
+            </ul>
         </div>
-        <div class="hero-image" id="home">
-            <div class="hero-text">
-            <h1>RICO's </h1>
-            <h2>PIZZA HUT</h2>
-            <p>"Hot & delicious pizza all day,everyday"</p>
-            <button class="btn btn-primary" ><a href="#order" style="color: white;">MAKE ORDER</a></button>
-            </div>
+    </nav>
+
+    <div >
+        <div class="welcome" id="home">
+        <h1>RICO's </h1>
+        <h2>PIZZA</h2>
+        <p>"Hot & delicious pizza all day,everyday"</p>
+        <a class="btn" href="#order" style="color: white;background-color:#5da271">MAKE ORDER</a>
         </div>
-         <!---menu-->
-        <div class="menu" id="menu">
-            <h1>MENU</h1>
-            <div class="row1"> 
-                <div class="column">
-                    <div class="content">
-                        <img src="./images/bg-img1.jpg" alt="Rico's Hawaiian" style="width:100%"><br><br>
-                        <h5>Rico's Hawaiian</h5>
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="content">
-                        <img src="./images/bg-img1.jpg" alt="Rico's Chicken Tikka" style="width:100%"><br><br>
-                        <h5>Rico's Chicken Tikka</h5>
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="content">
-                        <img src="./images/bg-img1.jpg" alt="Rico's BBQ steak" style="width:100%"><br><br>
-                        <h5>Rico's BBQ steak</h5>
-                    </div>
-                </div>
-                <div class="column">
+    </div>
+    <!---menu-->
+    <div class="container" id="menu">
+        <h3 style="padding-top:100px;color: #5da271;" ><strong>Menu</strong></h3> <br>
+        <div class="row"> 
+            <div class="col-sm">
                 <div class="content">
-                    <img src="./images/bg-img1.jpg" alt="Rico's Meat Deluxe" style="width:100%"><br><br>
+                    <img class="img" src="./images/pnew.jpeg" alt="Rico's Hawaiian" ><br><br>
+                    <h5>Rico's Hawaiian</h5>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="content">
+                    <img class="img" src="./images/pz.jpeg" alt="Rico's Chicken Tikka"><br><br>
+                    <h5>Rico's Chicken Tikka</h5>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="content">
+                    <img class="img" src="./images/bg-img1.jpg" alt="Rico's BBQ steak" ><br><br>
+                    <h5>Rico's BBQ steak</h5>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="content">
+                    <img class="img" src="./images/meaty.jpg" alt="Rico's Meat Deluxe"><br><br>
                     <h5>Rico's Meat Deluxe</h5>
                 </div>
             </div>
-        </div>  
-        <!---Order form-->
-        <div class="orders" id="order">
-            <h5 class="text-center" id="order-pizza"><strong>ENTER ORDER BELOW</strong></h5><br>
-            <div class="form-group row">
-                <div class="col-sm-2"></div>
-                    <div class="col-sm-8 text-centre">
-                        <form action="" id="pizzaorder" class="col-sm-6 offset-sm-3 text-center"> 
-                            <!---pizza size-->
-                            <label for="size">What size would you like?</label>
-                            <select id="size" name="size" class="custom-select custom-select-md mb-3" required>
-                                <option value=""select deactivate >select</option>
-                                <option value=0>Small--- @ 350 Kshs</option>
-                                <option value=1>Medium--- @ 500 Kshs</option>
-                                <option value=2>Large--- @ 1000 Kshs</option>
-                            </select>
-                            <!---pizza flavour-->
-                            <label for="flavour">What flavour would you like?</label>
-                            <select id="flavour" name="flavour" class="custom-select custom-select-md mb-3" required>
-                                <option value=""select deactivate>select</option>
-                                <option value="Hawaiian">Rico's Hawaiian</option>
-                                <option value="Chicken Tikka">Rico's Chicken Tikka</option>
-                                <option value="BBQ steak">Rico's BBQ steak</option>
-                                <option value="Meat Delux">Rico's Meat Deluxe</option>
-                            </select>
-                            <!---crust-->
-                            <label for="crust">which Crust would you like?</label>
-                            <select id="crust" name="crust" class="custom-select custom-select-md mb-3" required>
-                                <option value=""select deactivate >select</option>
-                                <option value=0>Crispy  --- @ 150 Kshs</option>
-                                <option value=1>Stuffed  --- @ 200 Kshs</option>
-                                <option value=2>Gluten-free --- @ 180 Kshs</option>
-                            </select>
-                            <!--- toppings-->
-                            <label for="topping">What toppings would you like?</label>
-                            <select id="toppings" name="topping"class="custom-select custom-select-md mb-3" required>
-                                <option value=""select deactivate >select</option>
-                                <option value=0>Pepperoni --- @ 200kshs</option>
-                                <option value=1>Sausage --- @ 300kshs</option>
-                                <option value=2>Extra-cheese --- @ 180kshs</option>
-                                <option value=3>Pineapple --- @ 200kshs</option>
-                                <option value=4>Spinach --- @ 180kshs</option>
-                            </select>
-                            <div>
-                                <label for="quantity">Number of pizza</label>
-                                <input class="custom-select custom-select-md mb-3" type="number" id="quantity" name="quantity" min="1" required>
-                            </div><br>
-                            <div class="totalcost">
-                                <label for="totalcost">
-                                <output name="totalcost" ></output></label>
-                            </div>
-                            <button type="submit" class="btn btn-warning">Checkout</button>
-                        </form> <br><br> <br><br>
-                        <div class="order-summary" id="sum-order">
-                            <h6 class="text-center summary"><strong>--ORDER SUMMARY--</strong></h6>
-                            <ol id="list" class="text-center sum">
+        </div>
+    </div>  
+    <!---Order form-->
+    <div class="order" id="order">
+        <h3 class="text-center" id="order-pizza"><strong>Make Order</strong></h3><br><br>
+        <form  id="pizza" class="col-sm-6 offset-sm-3 text-center" > 
+            <div class="row">
 
-                            </ol>
-                            <div class="d-block mx-auto text-center">
-                                <a href="./delivery.html"><button id="deliver" class="btn bg-warning">Delivery</button></a>
-                                <button id="delivernot" class="btn bg-warning">Pick Up</button>
-                            </div>
-                        </div><br><br>
-                    </div>
+                <div class="col-sm-4">
+                    <!---pizza size-->
+                    <label for="size">Pizza Size</label>
+                    <select id="size" name="size" class="custom-select custom-select-md mb-2" required>
+                        <option value="350">Small</option>
+                        <option value="500">Medium</option>
+                        <option value="1000">Large</option>
+                    </select><br>
+
+                    <!---pizza flavour-->
+                    <label for="flavor">Flavor</label>
+                    <select id="flavor" name="flavor" class="custom-select custom-select-md mb-2" required>
+                        <option value="0">Rico's Hawaiian</option>
+                        <option value="0">Rico's Chicken Tikka</option>
+                        <option value="0">Rico's BBQ steak</option>
+                        <option value="0">Rico's Meat Deluxe</option>
+                    </select><br>
+                </div>
+                <div class="col-sm-4">
+                    <!---crust-->
+                    <label for="crust">Crust</label>
+                    <select id="crust" name="crust" class="custom-select custom-select-md mb-2" required>
+                        <option value="150">Crispy</option>
+                        <option value="200">Stuffed</option>
+                        <option value="180">Gluten-free </option>
+                    </select><br>
+
+                    <!--- toppings-->
+                    <label for="toppings">Toppings</label>
+                    <select id="toppings" name="topping"class="custom-select custom-select-md mb-2" required>
+                        <option value="200">Pepperoni</option>
+                        <option value="300">Sausage</option>
+                        <option value="180">Extra-cheese</option>
+                        <option value="200">Pineapple</option>
+                        <option value="180">Spinach</option>
+                    </select>
+                </div>
+                <div class="col-sm-4">
+                    <!--- quantity-->
+                    <label for="number">Number of pizza</label>
+                    <input type="number" id="number" name="quantity" min="1" max= 35 class="custom-select custom-select-md mb-2" required>
+
+                    <!--- delivery-->
+                    <label for="delivery">Delivery</label>
+                    <select id="delivery" name="delivery"class="custom-select custom-select-md mb-2" required>
+                        <option value="400">Yes</option>
+                        <option value="0">No</option>
+                    </select><br><br>
                 </div>
             </div>
-        </div>
-        <div>
-        <footer>
-            <div class="footer">
-                <h4>Rico's Piza Hut</h4><br>
-                <p id="p-limited">
-                    TRM Thika Rd, <br>
-                    P.O Box 1734 - 00800 <br>
-                    Nairobi, Kenya <br>
-                    property in kenya <br>
-                    Office :	(+254 714) 666105 <br>
-                    contact Rico's Piza Hut, <br>
-                    info@ricospizza.co.ke <br>
-                </p>
+            <button type= "submit" class="col-md-2 btn btn-light" id="checkout" onclick="checkout()">Complete</button><br><br><br>
+            <p id="scroll">Order complete,please checkout below!!!</p>
+            <a class="btn btn-warning" id="checkout" href="#summary" ><i class="fa fa-shopping-cart" aria-hidden="true"></i> Checkout</a>
+
+        </form>  
+    </div>
+    <div id="summary" class="summary">
+        <div class="container" style="background-color: white;padding:20px;">
+            <div class="row">
+                <div class="col-sm-2"></div>
+                <div class="col-sm-4">
+                    <h3 style="color: #5da271;">Order Summary</h3>
+                    <h5>Pizza size: Kshs <span id="seeYourSizeChoice"></span></h5>
+                    <h5>Crust: Kshs<span id="seeYourCrustChoice"></span></h5>
+                    <h5>Toppings: Kshs<span id="seeYourToppingsChoice"></span></h5>
+                    <h5>Delivery: Kshs<span id="seeYourDeliveryChoice"></span></h5><br>
+                </div>
+                <div class="col-sm-4">
+                    <h3>Total Kshs<span id="displayTotal"></span></h3><br>
+                    <h6> <img class="img1" src="./images/mpesa.png" alt=""> <br><br> Paybill-123456</h6>
+                </div>
+                <div class="col-sm-2"></div>
+
             </div>
-        </footer>
-        <script src="./js/index.js"></script>
-        <script src="./js/jquery-3.5.1.js"></script>
-    </body>
+        </div>
+    </div>
+    <footer id="contacts">
+        <div class="footer">
+            <h4>Rico's Piza</h4><br>
+            <small id="p-limited">
+                TRM Thika Rd, <br>
+                P.O Box 1734 - 00800 <br>
+                Nairobi, Kenya <br>
+                property in kenya <br>
+                Office :	(+254 714) 666105 <br>
+                contact Rico's Piza Hut, <br>
+                info@ricospizza.co.ke <br>
+            </small>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script src="./js/index.js"></script>
+</body>
 </html>
