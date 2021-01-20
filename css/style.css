@@ -75,3 +75,8 @@ span{
   color: #404040;
 }
 
+
+.btn:hover{
+  background-color: #bc3908;
+  color: white;
+}

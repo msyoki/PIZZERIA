@@ -34,11 +34,15 @@ $(document).ready(function() {
     document.getElementById('displayTotal').innerHTML = total 
     console.log(total);
 
-    document.getElementById('seeYourSizeChoice').innerHTML = pizzaSize;
-    document.getElementById('seeYourCrustChoice').innerHTML = pizzaCrust;
-    document.getElementById('seeYourToppingsChoice').innerHTML = pizzaTopping;
-    document.getElementById('seeYourDeliveryChoice').innerHTML = pizzaDelivery;
-    
+    document.getElementById('seeYourSizeChoice').innerHTML ="Kshs "+ pizzaSize;
+    document.getElementById('seeYourCrustChoice').innerHTML ="Kshs "+pizzaCrust;
+    document.getElementById('seeYourToppingsChoice').innerHTML = "Kshs "+ pizzaTopping;
+    document.getElementById('seeQuantity').innerHTML = "x "+ pizzaQuantity;
+    if (pizzaDelivery > 0 ){
+      document.getElementById('seeYourDeliveryChoice').innerHTML ="Kshs "+ pizzaDelivery;
+    }else{
+      document.getElementById('deliverystatus').style.display = "none";
+    }
     $('#complete').hide();
     $('#summary').show();
     $('#scroll').show();
